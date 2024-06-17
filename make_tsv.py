@@ -1,10 +1,10 @@
 import os, hashlib, base64
 
-PREFIX = 'https://raw.githubusercontent.com/cd-public/books/main/' # DONT scrape Gutenberg
+PREFIX = 'https://raw.githubusercontent.com/cd-public/books/main/'
 BK_DIR = './books/'
 
 f = open("./books.tsv", "w")
-f.write("TsvHttpData-1.0 \n")
+f.write("TsvHttpData-1.0\t\n")
 
 for filename in os.listdir(BK_DIR):
     if filename[:2] == 'pg':
